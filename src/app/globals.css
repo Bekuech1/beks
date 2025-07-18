@@ -1,12 +1,27 @@
-@import url('https://fonts.cdnfonts.com/css/visby');
-
-body {
-    font-family: 'Visby', sans-serif;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.geist {
+  font-family: "Geist", sans-serif;
+}
+
+.berlin-sans {
+  font-family: "Berlin Sans FB", sans-serif;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 
 :root {
   --background: #ffffff;
@@ -26,14 +41,14 @@ body {
 }
 
 .gradient-background {
-  background: linear-gradient(88.35deg, #989898 12.54%, #FEFEFE 50.14%, #989898 89.63%);
+  background: linear-gradient(
+    88.35deg,
+    #989898 12.54%,
+    #fefefe 50.14%,
+    #989898 89.63%
+  );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-}
-
-.custom-scrollbar {
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  -webkit-text-fill-color: transparent;
 }
 
 .typing-animation {
@@ -63,8 +78,6 @@ body {
   }
 }
 
-.fix{
+.fix {
   border: 1px solid red;
 }
-
-

@@ -7,50 +7,51 @@ type NavbarProps = PropsWithChildren<{
   showButton?: boolean;
 }>;
 
-const Navbar: React.FC<NavbarProps> = ({ showButton }) => {
+const Navbar: React.FC<NavbarProps> = () => {
   return (
-    <nav
-      className={`bg-black bg-opacity-70 py-4 sticky top-0 z-10 ${
-        showButton ? "opacity-100" : "opacity-0 pointer-events-none"
-      } transition-opacity`}
-      id="nav"
-    >
-      <div className="container mx-auto flex justify-between items-center rounded-full border-[2px] border-gray-800 w-fit">
-      <Link
-        href="#works"
-        className="px-5 py-2 rounded-full bg-transparent text-white hover:bg-purple-600"
-      >
-        Work
-      </Link>
-      <Link
-        href="#about"
-        className="px-5 py-2 rounded-full bg-transparent text-white hover:bg-purple-600"
-      >
-        About
-      </Link>
-      <Link
-        href="#skills"
-        className="px-5 py-2 rounded-full bg-transparent text-white hover:bg-purple-600"
-      >
-        Skills
-      </Link>
-      <Link
-        href="#experience"
-        className="px-5 py-2 rounded-full bg-transparent text-white hover:bg-purple-600"
-      >
-        Experience
-      </Link>
-      <Link
-        href="#contact"
-        className="px-5 py-2 rounded-full bg-transparent text-white hover:bg-purple-600"
-      >
-        Contact
-      </Link>
-
+    <nav className="w-full flex justify-between items-center h-fit top-[17px] right-0 fixed md:px-20 px-6">
+      <h1 className="geist capitalize font-bold text-[18px] leading-[100%] w-full xl:text-[24px] text-white">
+        chibuikem igboanugo
+      </h1>
+      <div className="w-full md:flex hidden justify-center">
+        <div className="border border-[#373737] py-3 px-6 rounded-full size-fit">
+          <ul className="flex gap-6 md:gap-3">
+            <li>
+              <Link href="#works" className="geist text-[16px] leading-[100%]">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="#about" className="geist text-[16px] leading-[100%]">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="#skills" className="geist text-[16px] leading-[100%]">
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#experience"
+                className="geist text-[16px] leading-[100%]"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="w-full flex justify-end">
+        <button className="geist bg-white py-3 px-6 rounded-full text-[16px] font-bold leading-[100%] text-[#050505] md:block hidden">
+          Resume
+        </button>
+        <button>
+          <img src="/navbtn.svg" className="md:hidden block"/>
+        </button>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-
