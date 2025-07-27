@@ -1,7 +1,6 @@
 "use client";
 
-import { div } from "framer-motion/client";
-import React, { useState } from "react";
+import React from "react";
 
 const Works = () => {
   const selectedWorks = [

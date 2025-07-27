@@ -18,7 +18,7 @@ const About: React.FC = () => {
       </h2>
       <p className="geist relative md:text-[16px] text-[12px] font-normal text-white leading-[120%] max-w-xl mt-4 -z-10 px-8">
         Lies a world of endless possibilities, where imagination meets reality.
-        It's a realm filled with vibrant colors, captivating stories, and
+        It&apos;s a realm filled with vibrant colors, captivating stories, and
         experiences waiting to unfold. Dive in and explore the adventures that
         await! Each corner reveals new wonders, from enchanted forests to
         bustling cities. Meet characters that inspire and challenge you, each
