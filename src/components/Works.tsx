@@ -17,7 +17,7 @@ const Works = () => {
       liveLink: "https://Meetro.vercel.app",
       githubLink:
         "https://github.com/Victorthedev/Music-For-You-Frontend-Spotify",
-      previewImage: "/groovz.png",
+      previewImage: "/meetro.png",
       year: "2025",
     },
     {
@@ -43,7 +43,7 @@ const Works = () => {
       ],
       liveLink: "https://blog-platform.com",
       githubLink: "https://github.com/your-username/blog-platform",
-      previewImage: "/me.png",
+      previewImage: "/bekuechi.png",
       year: "2025",
     },
     {

@@ -53,7 +53,7 @@ const Cards: React.FC = () => {
       <Card
         containerRef={containerRef}
         src="/beko3.jpg"
-        top="65%"
+        top="63%"
         left="71%"
         className="lg:w-[293px] lg:h-[386px] sm:w-[203px] sm:h-[266px] w-[184px] h-[219px]"
       />
