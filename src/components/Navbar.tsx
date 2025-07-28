@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </div>
       </div>
       <div className="w-full flex justify-end">
-        <button className="geist bg-white py-3 px-6 rounded-full text-[16px] font-bold leading-[100%] text-[#050505] md:block hidden">
+        <button className="geist bg-white hover:bg-white/50 py-3 px-6 rounded-full text-[16px] font-bold leading-[100%] text-[#050505] md:block hidden">
           Resume
         </button>
         <button>

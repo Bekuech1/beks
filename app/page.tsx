@@ -12,13 +12,13 @@ import Footer from "@/components/Footer";
 export default function Home() {
 
   return (
-    <div className="grid">
+    <div className="flex flex-col">
       <main className="h-screen bg-[#040404] flex justify-center relative">
-        <div className="absolute md:top-[100px] top-[200px] sm:size-[600px] size-[360px] rounded-[50%] bg-[#3F1BCF52] opacity-80 blur-[80px]"></div>
-        <div className="absolute md:top-[100px] top-[200px] sm:size-[600px] size-[360px] rounded-[50%] border border-[#3F1BCF52]"></div>
+        <div className="absolute md:top-[100px] top-[200px] sm:size-[600px] size-[360px] rounded-[50%] bg-[#3F1BCF52] blur-[80px]"></div>
+        <div className="absolute md:top-[100px] top-[200px] sm:size-[600px] size-[360px] rounded-[50%] border border-[#3F1BCF52] blur-[80px]"></div>
         <div className="flex flex-col items-start z-10 w-full gap-10 relative overflow-y-auto mt-20 scrollbar-hide scroll-smooth">
           <Navbar />
-          <div className="w-full grid gap-10 px-6 sm:px-20">
+          <div className="w-full grid gap-10 px-6 sm:px-20 fix">
             <Hero />
             <Works />
           </div>
